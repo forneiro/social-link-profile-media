@@ -1,0 +1,89 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --white2: hsla(0, 0%, 100%, 0.7);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.4rem;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  background-color: var(--grey-900);
+  color: var(--white);
+}
+a {
+  font-weight: 600;
+  color: var(--white);
+  text-decoration: none;
+  padding: 1.2rem;
+  border-radius: 0.6rem;
+  background-color: var(--grey-700);
+}
+a:hover {
+  background-color: var(--green);
+  color: var(--grey-900);
+}
+h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+main {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+}
+
+/* CARD */
+.card {
+  background-color: var(--grey-800);
+  max-width: 36rem;
+  margin: 15vh auto 0;
+  padding: 4rem 3.4rem;
+  border-radius: 1rem;
+}
+.first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-image {
+  max-width: 8rem;
+  max-height: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.card-location {
+  color: var(--green);
+  margin: 0.6rem 0 2.2rem;
+  font-weight: 600;
+}
+.card-phrase {
+  font-weight: 400;
+  color: var(--white2);
+}
+.card-nav {
+  margin-top: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+/* MOBILE */
+@media (max-width: 400px) {
+  .card {
+    max-width: 90%;
+  }
+}
